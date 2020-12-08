@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #262629;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body main {
+  position: absolute;
+  -webkit-transform: translateY(1200%);
+          transform: translateY(1200%);
+  top: 5%;
+  left: 40%;
+}
+
+body main #text {
+  position: relative;
+  margin: 0;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  background: transparent;
+}
+
+body main label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #948585;
+  font-size: 18px;
+}
+
+body main span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #03a9f4;
+  -webkit-transition: all 1.2s ease;
+  transition: all 1.2s ease;
+}
+
+body main #text:focus ~ span {
+  width: 100%;
+}
+
+body main #text:focus ~ label {
+  top: -120%;
+  left: 0;
+  color: #03a9f4;
+}
+
+body main #text:focus ~ label,
+body main #text:valid ~ label {
+  top: -90%;
+  left: 0;
+  color: #03a9f4;
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */
